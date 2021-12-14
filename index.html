@@ -128,33 +128,33 @@
           <ul class="ocupation-pics-block">
             <li>
               <div class="ocupation-pics-unit">
-              <img
-                src="./images/index/boxone.jpg"
-                alt="working process"
-                width="370"
-              />
-              <p>Десктопные приложения</p>
-            </div>
+                <img
+                  src="./images/index/boxone.jpg"
+                  alt="working process"
+                  width="370"
+                />
+                <p>Десктопные приложения</p>
+              </div>
             </li>
             <li>
               <div class="ocupation-pics-unit">
-              <img
-                src="./images/index/boxtwo.jpg"
-                alt="working process"
-                width="370"
-              />
-              <p>Мобильные приложения</p>
-            </div>
+                <img
+                  src="./images/index/boxtwo.jpg"
+                  alt="working process"
+                  width="370"
+                />
+                <p>Мобильные приложения</p>
+              </div>
             </li>
             <li>
               <div class="ocupation-pics-unit">
-              <img
-                src="./images/index/boxthree.jpg"
-                alt="working process"
-                width="370"
-              />
-              <p>Дизайнерские решения</p>
-            </div>
+                <img
+                  src="./images/index/boxthree.jpg"
+                  alt="working process"
+                  width="370"
+                />
+                <p>Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -451,11 +451,89 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <form class="subscribe-form">
+            <h2 class="subscribe-header">Подпишитесь на рассылку</h2>
+            <div class="subscribe-wrapper">
+              <input type="mail" class="subscribe-input" placeholder="E-mail" />
+              <button type="submit" class="subscribe-submit button">
+                Подписаться
+                <span class="telegramm-span">
+                  <svg>
+                    <use href="./images/index/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-backdrop" data-modal-close>Close</button>
+        <button type="button" class="close-backdrop" data-modal-close>
+          <span class="strange-span">
+            <svg>
+              <use href="./images/index/icons.svg#icon-close"></use>
+            </svg>
+          </span>
+        </button>
+        <form class="index-form">
+          <h2 class="index-form-header title">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+          <label for="name">Имя</label>
+
+          <div class="common-form">
+            <input type="text" name="name" id="name" class="common-input" />
+            <svg>
+              <use href="./images/index/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label for="tel">Телефон</label>
+          <div class="common-form">
+            <input type="tel" name="tel" id="tel" class="common-input" />
+            <svg>
+              <use href="./images/index/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label for="mail">Почта</label>
+          <div class="common-form">
+            <input type="email" name="mail" id="email" class="common-input" />
+            <svg>
+              <use href="./images/index/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label for="comment">Комментарий</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Введите текст"
+            class="common-input"
+          ></textarea>
+          <div class="index-checkbox-field">
+            <label for="agreement" class="index-checkbox">
+              <input
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+                class="checkbox-itself"
+              />
+              Соглашаюсь с рассылкой и принимаю &nbsp
+              <a href="" class="agreement-link"> Условия договора</a>
+              <span class="agreement-check">
+                <svg>
+                  <use href="./images/index/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="index-form-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
